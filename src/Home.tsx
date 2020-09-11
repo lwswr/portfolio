@@ -1,6 +1,6 @@
 import * as React from "react";
 import { RouteComponentProps } from "@reach/router";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated as a } from "react-spring";
 
 export const Home = (props: RouteComponentProps) => {
   const fade = useSpring({
@@ -11,7 +11,12 @@ export const Home = (props: RouteComponentProps) => {
   });
   return (
     <div>
-      <animated.div style={fade}>Home</animated.div>
+      <a.h1 style={fade}>Home</a.h1>
+      <a.img
+        src="https://www.telegraph.co.uk/content/dam/Travel/2019/September/nz.jpg?imwidth=1400"
+        alt="#"
+        style={fade}
+      />
     </div>
   );
 };
