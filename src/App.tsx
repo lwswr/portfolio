@@ -7,10 +7,12 @@ import { Projects } from "./Projects";
 const MainContainer = styled.nav`
   display: flex;
   flex-direction: row;
-  background-image: linear-gradient(#2630b5, #507594);
+  background-image: linear-gradient(#092982, #507594);
   position: fixed;
   height: 100%;
   width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
 `;
 
 const ScrollColoumn = styled.div`
@@ -32,7 +34,6 @@ const FixedColoumn = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  overflow-x: hidden;
 `;
 
 function App() {
