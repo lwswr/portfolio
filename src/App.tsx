@@ -1,38 +1,50 @@
 import React from "react";
-import { Router, Link } from "@reach/router";
-import { About } from "./About";
-import { Home } from "./Home";
+import { NameTag } from "./NameTag";
 import "./index.css";
 import styled from "styled-components";
+import { Projects } from "./Projects";
 
-const Navbar = styled.nav`
+const MainContainer = styled.nav`
   display: flex;
   flex-direction: row;
-  background: #303438;
-  width: auto;
+  background-image: linear-gradient(#2630b5, #507594);
+  position: fixed;
+  height: 100%;
+  width: 100%;
 `;
 
-const NavItem = styled.div`
-  padding: 10px;
-  font-size: 30px;
+const ScrollColoumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin: auto;
+  height: 82%;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+const FixedColoumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  overflow-x: hidden;
 `;
 
 function App() {
   return (
-    <div>
-      <Navbar>
-        <NavItem>
-          <Link to="/">Home</Link>
-        </NavItem>
-        <NavItem>
-          <Link to="about">About</Link>
-        </NavItem>
-      </Navbar>
-      <Router>
-        <Home path="/" />
-        <About path="about" />
-      </Router>
-    </div>
+    <MainContainer>
+      <ScrollColoumn>
+        <Projects />
+      </ScrollColoumn>
+      <FixedColoumn>
+        <NameTag />
+      </FixedColoumn>
+    </MainContainer>
   );
 }
 
