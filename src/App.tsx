@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const MainContainer = styled.nav`
   display: flex;
   flex-direction: row;
-  background-image: linear-gradient(#092982, #716273);
+  background-image: linear-gradient(#092982, #40626e);
   position: fixed;
   height: 100%;
   width: 100%;
@@ -25,7 +25,7 @@ const ScrollColoumn = styled(motion.div)`
   overflow-y: auto;
   overflow-x: auto;
   margin: auto;
-  height: 80%;
+  height: 75%;
   ::-webkit-scrollbar {
     display: none;
   }
@@ -42,8 +42,8 @@ const FixedColoumn = styled.div`
 const ProjectsTitle = styled(motion.div)`
   display: flex;
   position: fixed;
-  margin-top: 25px;
-  margin-left: 250px;
+  margin-top: 2%;
+  margin-left: 20%;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 50px;
