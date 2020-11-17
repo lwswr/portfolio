@@ -11,6 +11,8 @@ const ProjectCardContainer = styled.div`
   width: 100%;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 0px solid none;
+  border-radius: 15px;
   :hover {
     div:nth-child(1) {
       opacity: 0;
@@ -60,6 +62,7 @@ const ProjectCardDescription = styled.div`
 const ProjectCardImage = styled.img`
   width: inherit;
   height: inherit;
+  border-radius: 15px;
 `;
 
 const DemoButton = styled.button`
@@ -73,7 +76,7 @@ const DemoButton = styled.button`
   background: none;
   color: white;
   border: solid 1px white;
-  border-radius: 15px;
+  border-radius: 30px;
   padding: 5px;
   :hover {
     background: white;
@@ -93,7 +96,7 @@ const GitHubButton = styled.button`
   border: solid 1px white;
   color: white;
   font-size: 25px;
-  border-radius: 15px;
+  border-radius: 30px;
   padding: 5px;
   :hover {
     background: white;

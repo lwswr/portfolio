@@ -37,6 +37,7 @@ const FixedColoumn = styled.div`
   justify-content: center;
   padding-right: 100px;
   width: 50%;
+  text-align: center;
 `;
 
 const ProjectsTitle = styled(motion.div)`
