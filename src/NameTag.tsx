@@ -31,11 +31,12 @@ const Name = styled(motion.div)`
 `;
 
 const Title = styled(motion.div)`
-  font-size: 18px;
+  font-size: 35px;
   padding-left: 20%;
   letter-spacing: 5px;
   position: relative;
   @media only screen and (max-device-width: 768px) {
+    font-size: 18px;
     padding-left: 0px;
     font-size: 18px;
     width: 100w;
