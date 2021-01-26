@@ -1,27 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b37bba2e.chunk.css",
-    "main.js": "/portfolio/static/js/main.d55e424d.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.d55e424d.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.2362f5a0.chunk.js": "/portfolio/static/js/2.2362f5a0.chunk.js",
-    "static/js/2.2362f5a0.chunk.js.map": "/portfolio/static/js/2.2362f5a0.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.ecb5d203.chunk.css",
+    "main.js": "/portfolio/static/js/main.3028c186.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.3028c186.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
+    "static/js/2.b5af2fec.chunk.js": "/portfolio/static/js/2.b5af2fec.chunk.js",
+    "static/js/2.b5af2fec.chunk.js.map": "/portfolio/static/js/2.b5af2fec.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.d52433df18bc0916d6c1657f1c8b3afe.js": "/portfolio/precache-manifest.d52433df18bc0916d6c1657f1c8b3afe.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.b37bba2e.chunk.css.map": "/portfolio/static/css/main.b37bba2e.chunk.css.map",
-    "static/js/2.2362f5a0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2362f5a0.chunk.js.LICENSE.txt",
-    "static/media/covid-tracker1.png": "/portfolio/static/media/covid-tracker1.94912ed2.png",
-    "static/media/covid-tracker2.png": "/portfolio/static/media/covid-tracker2.0b72274c.png",
-    "static/media/movie-db1.png": "/portfolio/static/media/movie-db1.e11fcb55.png",
-    "static/media/movie-db2.png": "/portfolio/static/media/movie-db2.39cc641f.png",
-    "static/media/weather-app.png": "/portfolio/static/media/weather-app.c857e20b.png"
+    "static/css/main.ecb5d203.chunk.css.map": "/portfolio/static/css/main.ecb5d203.chunk.css.map",
+    "static/js/2.b5af2fec.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b5af2fec.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.2362f5a0.chunk.js",
-    "static/css/main.b37bba2e.chunk.css",
-    "static/js/main.d55e424d.chunk.js"
+    "static/js/runtime-main.8fed2963.js",
+    "static/js/2.b5af2fec.chunk.js",
+    "static/css/main.ecb5d203.chunk.css",
+    "static/js/main.3028c186.chunk.js"
   ]
 }
