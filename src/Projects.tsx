@@ -13,23 +13,30 @@ export const Projects = () => {
   return (
     <ProjectsContainer>
       <ProjectCard
+        title={"ECOMMERCE APP"}
+        description={ecommerceDes}
+        image={process.env.PUBLIC_URL + "/images/ecommerce1.png"}
+        githubURL={"https://github.com/lwswr/ecommerce"}
+        demoURL={"https://lwswr.github.io/ecommerce/"}
+      />
+      <ProjectCard
         title={"COVID TRACKER"}
         description={covidTrackerDes}
-        image={"./images/covid-tracker1.png"}
+        image={process.env.PUBLIC_URL + "/images/covidtracker1.png"}
         githubURL={"https://github.com/lwswr/covid-tracker"}
         demoURL={"https://lwswr.github.io/covid-tracker/"}
       />
       <ProjectCard
         title={"WEATHER APPLIACTION"}
         description={weatherAppDes}
-        image={"./images/weather-app.png"}
+        image={process.env.PUBLIC_URL + "/images/weatherapp.png"}
         githubURL={"https://github.com/lwswr/weather-app"}
         demoURL={"https://lwswr.github.io/weather-app/"}
       />
       <ProjectCard
         title={"MOVIE DATABASE"}
         description={movieDBDes}
-        image={"./images/movie-db1.png"}
+        image={process.env.PUBLIC_URL + "/images/moviedb1.png"}
         githubURL={"https://github.com/lwswr/movie-db"}
         demoURL={"https://lwswr.github.io/movie-db/"}
       />
@@ -45,3 +52,5 @@ const weatherAppDes: string =
 
 const movieDBDes: string =
   "Single page application which displays a list of movies based on user input and allows the user to expand different movie tiles to access more information. React, Typescript, Axios Promise based http client, oMDB API, styled-components for styling.";
+
+const ecommerceDes: string = "Single page application";

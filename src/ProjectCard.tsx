@@ -60,9 +60,11 @@ const ProjectCardDescription = styled.div`
 `;
 
 const ProjectCardImage = styled.img`
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 5px 10px -1px rgba(0, 0, 0, 0.06);
 `;
 
 const DemoButton = styled.button`
@@ -125,12 +127,7 @@ export const ProjectCard = ({
   return (
     <ProjectCardContainer>
       <ProjectCardTitle>{title}</ProjectCardTitle>
-      <ProjectCardImage
-        src={require(image + "")}
-        alt=""
-        height={300}
-        width={600}
-      />
+      <ProjectCardImage src={image} alt="" height={300} width={600} />
       <ProjectCardDescription>{description}</ProjectCardDescription>
       <GitHubButton onClick={() => goToURLClicked(githubURL)}>
         GITHUB
