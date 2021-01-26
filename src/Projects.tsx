@@ -53,4 +53,5 @@ const weatherAppDes: string =
 const movieDBDes: string =
   "Single page application which displays a list of movies based on user input and allows the user to expand different movie tiles to access more information. React, Typescript, Axios Promise based http client, oMDB API, styled-components for styling.";
 
-const ecommerceDes: string = "Single page application";
+const ecommerceDes: string =
+  "Single page application emmulating an eccomerce site with a product list and basket interface. Coded using React, Redux & Typescript, data requests fetched using axios from fakeapi.com. The app is styled using styled components.";

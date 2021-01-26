@@ -14,6 +14,16 @@ const MainContainer = styled.nav`
   width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
+  @media only screen and (max-device-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: linear-gradient(#092982, #40626e);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 `;
 
 const ScrollColoumn = styled(motion.div)`
@@ -29,6 +39,17 @@ const ScrollColoumn = styled(motion.div)`
   ::-webkit-scrollbar {
     display: none;
   }
+  @media only screen and (max-device-width: 768px) {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 5%;
+    width: 90%;
+    height: 60%;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
 `;
 
 const FixedColoumn = styled.div`
@@ -38,31 +59,19 @@ const FixedColoumn = styled.div`
   padding-right: 100px;
   width: 50%;
   text-align: center;
-`;
-
-const ProjectsTitle = styled(motion.div)`
-  display: flex;
-  position: fixed;
-  margin-top: 2%;
-  margin-left: 20%;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 6px;
+  @media only screen and (max-device-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
 `;
 
 function App() {
   return (
     <MainContainer>
-      <ProjectsTitle
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5, delay: 3 }}
-      >
-        PROJECTS
-      </ProjectsTitle>
       <ScrollColoumn
         initial={{ x: -200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}

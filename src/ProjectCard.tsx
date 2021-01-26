@@ -28,13 +28,16 @@ const ProjectCardContainer = styled.div`
       opacity: 1;
     }
   }
+  @media only screen and (max-device-width: 768px) {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 `;
 
 const ProjectCardTitle = styled.div`
   position: absolute;
   opacity: 0.8;
   background: white;
-  color: #202020;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -46,17 +49,27 @@ const ProjectCardTitle = styled.div`
   transition: 0.2s ease-in;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 5px 10px -1px rgba(0, 0, 0, 0.06);
+  @media only screen and (max-device-width: 768px) {
+    font-size: 25px;
+  }
 `;
 
 const ProjectCardDescription = styled.div`
+  font-size: 18px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  width: 75%;
+  width: 90%;
   text-align: left;
   transition: 0.2s ease-in;
+  color: white;
+  @media only screen and (max-device-width: 768px) {
+    top: 30%;
+    font-size: 12px;
+    width: 90%;
+  }
 `;
 
 const ProjectCardImage = styled.img`
@@ -104,6 +117,9 @@ const GitHubButton = styled.button`
     background: white;
     border: solid 1px white;
     color: black;
+  }
+  @media only screen and (max-device-width: 768px) {
+    left: 10%;
   }
 `;
 

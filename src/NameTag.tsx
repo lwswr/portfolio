@@ -8,6 +8,14 @@ const NameTagContainer = styled.div`
   justify-content: flex-start;
   font-family: "Lato", sans-serif;
   padding-bottom: 200px;
+  color: white;
+  @media only screen and (max-device-width: 768px) {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 25px;
+  }
 `;
 
 const Name = styled(motion.div)`
@@ -15,13 +23,23 @@ const Name = styled(motion.div)`
   padding-left: 20%;
   font-weight: 900;
   position: relative;
+  @media only screen and (max-device-width: 768px) {
+    padding-left: 0px;
+    font-size: 100px;
+    width: 100vw;
+  }
 `;
 
 const Title = styled(motion.div)`
-  font-size: 35px;
+  font-size: 18px;
   padding-left: 20%;
   letter-spacing: 5px;
   position: relative;
+  @media only screen and (max-device-width: 768px) {
+    padding-left: 0px;
+    font-size: 18px;
+    width: 100w;
+  }
 `;
 
 const FullStop = styled(motion.span)`
