@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-const NameTagContainer = styled.div`
+const NameTagCon = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -50,7 +50,7 @@ const FullStop = styled(motion.span)`
 
 export const NameTag = () => {
   return (
-    <NameTagContainer>
+    <NameTagCon>
       <Name
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -79,6 +79,6 @@ export const NameTag = () => {
           .
         </FullStop>
       </Name>
-    </NameTagContainer>
+    </NameTagCon>
   );
 };
