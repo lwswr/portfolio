@@ -13,11 +13,25 @@ export const Projects = () => {
   return (
     <ProjectsContainer>
       <ProjectCard
+        title={"GEOJSON FEATURES DATA"}
+        description={geoJsonFeatureDes}
+        image={process.env.PUBLIC_URL + "/images/geojsonfeature1.png"}
+        githubURL={"https://github.com/lwswr/geojson-feature"}
+        demoURL={"https://lwswr.github.io/geojson-feature/"}
+      />
+      <ProjectCard
         title={"ECOMMERCE APP"}
         description={ecommerceDes}
         image={process.env.PUBLIC_URL + "/images/ecommerce1.png"}
         githubURL={"https://github.com/lwswr/ecommerce"}
         demoURL={"https://lwswr.github.io/ecommerce/"}
+      />
+      <ProjectCard
+        title={"JOB SEARCH APP"}
+        description={jobSearchDes}
+        image={process.env.PUBLIC_URL + "/images/jobsearch1.png"}
+        githubURL={"https://github.com/lwswr/job-search"}
+        demoURL={"https://lwswr.github.io/job-search/"}
       />
       <ProjectCard
         title={"COVID TRACKER"}
@@ -55,3 +69,9 @@ const movieDBDes: string =
 
 const ecommerceDes: string =
   "Single page application emmulating an eccomerce site with a product list and basket interface. Coded using React, Redux & Typescript, data requests fetched using axios from fakeapi.com. The app is styled using styled components.";
+
+const geoJsonFeatureDes: string =
+  "Single page application that displays geojson features as polygons on a map with scale and relativity. Mapped using pigeon-maps react library. The front end technologies used are React, Redux & Typescript. The data is plotted using svg polylines. Data for the features is fetched from the OpenStreetMap API using axios HTTP client. Styled-components is used for styling";
+
+const jobSearchDes: string =
+  "Single page application that displays coordinates of jobs fetched from the adzuna API mapped using the pigeon-maps library. The front end technologies used are React, Redux & Typescript. Styled-components is used for styling";
