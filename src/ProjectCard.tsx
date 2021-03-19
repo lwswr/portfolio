@@ -56,7 +56,7 @@ const ProjectCardTitle = styled.div`
     only screen and (-o-min-device-pixel-ratio: 2/1),
     only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min-device-pixel-ratio: 2) {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 `;
 
