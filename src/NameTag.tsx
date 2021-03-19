@@ -56,10 +56,19 @@ const Logos = styled(motion.div)`
   width: 75%;
   margin-top: 20px;
   margin-left: 175px;
+  @media only screen and (max-device-width: 768px) {
+    margin-left: 30px;
+  }
 `;
 
 const Logo = styled(motion.img)`
   margin-right: 20px;
+  height: 100px;
+  width: auto;
+  @media only screen and (max-device-width: 768px) {
+    height: 50px;
+    width: auto;
+  }
 `;
 
 export const NameTag = () => {
@@ -104,8 +113,6 @@ export const NameTag = () => {
           transition={{ delay: 2, duration: 0.3 }}
           src={TS_LOGO}
           alt=""
-          height={100}
-          width={100}
         />
 
         <Logo
@@ -114,8 +121,6 @@ export const NameTag = () => {
           transition={{ delay: 2.25, duration: 0.3 }}
           src={REACT_LOGO}
           alt=""
-          height={100}
-          width={150}
         />
         <Logo
           initial={{ opacity: 0 }}
@@ -123,8 +128,6 @@ export const NameTag = () => {
           transition={{ delay: 2.5, duration: 0.3 }}
           src={REDUX_LOGO}
           alt=""
-          height={100}
-          width={100}
         />
       </Logos>
     </NameTagCon>
