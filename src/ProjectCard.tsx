@@ -82,7 +82,7 @@ const ProjectCardImage = styled.img`
 
 const ButtonOne = styled.button`
   position: absolute;
-  left: 25%;
+  left: 10%;
   top: 70%;
   opacity: 0;
   font-family: "Lato", sans-serif;
