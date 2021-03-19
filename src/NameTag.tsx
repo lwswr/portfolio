@@ -5,9 +5,8 @@ import { motion } from "framer-motion";
 const NameTagCon = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   font-family: "Lato", sans-serif;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   color: white;
   @media only screen and (max-device-width: 768px) {
     display: flex;
@@ -48,7 +47,26 @@ const FullStop = styled(motion.span)`
   position: relative;
 `;
 
+const Logos = styled(motion.div)`
+  align-self: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75%;
+  margin-top: 20px;
+  margin-left: 175px;
+`;
+
+const Logo = styled(motion.img)`
+  margin-right: 20px;
+`;
+
 export const NameTag = () => {
+  const REACT_LOGO: string = process.env.PUBLIC_URL + "/images/react_logo.png";
+  const REDUX_LOGO: string = process.env.PUBLIC_URL + "/images/redux_logo.png";
+  const TS_LOGO: string = process.env.PUBLIC_URL + "/images/typescriptlogo.png";
+
   return (
     <NameTagCon>
       <Name
@@ -79,6 +97,36 @@ export const NameTag = () => {
           .
         </FullStop>
       </Name>
+      <Logos>
+        <Logo
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2, duration: 0.3 }}
+          src={TS_LOGO}
+          alt=""
+          height={100}
+          width={100}
+        />
+
+        <Logo
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2.25, duration: 0.3 }}
+          src={REACT_LOGO}
+          alt=""
+          height={100}
+          width={150}
+        />
+        <Logo
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2.5, duration: 0.3 }}
+          src={REDUX_LOGO}
+          alt=""
+          height={100}
+          width={100}
+        />
+      </Logos>
     </NameTagCon>
   );
 };
