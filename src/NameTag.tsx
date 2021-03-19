@@ -35,7 +35,6 @@ const Title = styled(motion.div)`
   letter-spacing: 5px;
   position: relative;
   @media only screen and (max-device-width: 768px) {
-    font-size: 18px;
     padding-left: 0px;
     font-size: 1.1rem;
     width: 100w;
@@ -66,7 +65,7 @@ const Logo = styled(motion.img)`
   height: 6rem;
   width: auto;
   @media only screen and (max-device-width: 768px) {
-    height: 50px;
+    height: 3rem;
     width: auto;
   }
 `;
