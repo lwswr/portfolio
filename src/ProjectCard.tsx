@@ -42,7 +42,7 @@ const ProjectCardTitle = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 300;
-  font-size: 50px;
+  font-size: 3rem;
   text-align: center;
   letter-spacing: 2px;
   width: inherit;
@@ -50,12 +50,12 @@ const ProjectCardTitle = styled.div`
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 5px 10px -1px rgba(0, 0, 0, 0.06);
   @media only screen and (max-device-width: 768px) {
-    font-size: 25px;
+    font-size: 2rem;
   }
 `;
 
 const ProjectCardDescription = styled.div`
-  font-size: 18px;
+  font-size: 1.2rem;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -67,7 +67,7 @@ const ProjectCardDescription = styled.div`
   color: white;
   @media only screen and (max-device-width: 768px) {
     top: 30%;
-    font-size: 12px;
+    font-size: 0.65rem;
     width: 90%;
   }
 `;
@@ -75,32 +75,12 @@ const ProjectCardDescription = styled.div`
 const ProjectCardImage = styled.img`
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 5px 10px -1px rgba(0, 0, 0, 0.06);
 `;
 
-const DemoButton = styled.button`
-  position: absolute;
-  left: 65%;
-  top: 70%;
-  opacity: 0;
-  font-family: "Lato", sans-serif;
-  font-size: 25px;
-  transition: 0.2s;
-  background: none;
-  color: white;
-  border: solid 1px white;
-  border-radius: 30px;
-  padding: 5px;
-  :hover {
-    background: white;
-    border: solid 1px white;
-    color: black;
-  }
-`;
-
-const GitHubButton = styled.button`
+const ButtonOne = styled.button`
   position: absolute;
   left: 25%;
   top: 70%;
@@ -110,17 +90,48 @@ const GitHubButton = styled.button`
   background: none;
   border: solid 1px white;
   color: white;
-  font-size: 25px;
-  border-radius: 30px;
-  padding: 5px;
+  font-size: 2rem;
+  border-radius: 2rem;
+  padding: 0.5rem;
   :hover {
     background: white;
     border: solid 1px white;
     color: black;
   }
   @media only screen and (max-device-width: 768px) {
-    left: 10%;
+    left: 20%;
+    font-size: 1rem;
   }
+`;
+
+const ButtonTwo = styled.button`
+  position: absolute;
+  left: 75%;
+  top: 70%;
+  opacity: 0;
+  font-family: "Lato", sans-serif;
+  transition: all 0.5s;
+  background: none;
+  border: solid 1px white;
+  color: white;
+  font-size: 2rem;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  :hover {
+    background: white;
+    border: solid 1px white;
+    color: black;
+  }
+  @media only screen and (max-device-width: 768px) {
+    left: 60%;
+    font-size: 1rem;
+  }
+`;
+
+const ButtonBank = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 
 const goToURLClicked = (url: string) => {
@@ -145,10 +156,10 @@ export const ProjectCard = ({
       <ProjectCardTitle>{title}</ProjectCardTitle>
       <ProjectCardImage src={image} alt="" height={300} width={600} />
       <ProjectCardDescription>{description}</ProjectCardDescription>
-      <GitHubButton onClick={() => goToURLClicked(githubURL)}>
-        GITHUB
-      </GitHubButton>
-      <DemoButton onClick={() => goToURLClicked(demoURL)}>DEMO</DemoButton>
+      <ButtonBank>
+        <ButtonOne onClick={() => goToURLClicked(githubURL)}>GITHUB</ButtonOne>
+        <ButtonTwo onClick={() => goToURLClicked(demoURL)}>DEMO</ButtonTwo>
+      </ButtonBank>
     </ProjectCardContainer>
   );
 };

@@ -35,7 +35,7 @@ const ScrollColoumn = styled(motion.div)`
   overflow-y: auto;
   overflow-x: auto;
   margin: auto;
-  height: 75%;
+  height: 95%;
   ::-webkit-scrollbar {
     display: none;
   }

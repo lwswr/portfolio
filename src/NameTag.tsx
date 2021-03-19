@@ -18,26 +18,26 @@ const NameTagCon = styled.div`
 `;
 
 const Name = styled(motion.div)`
-  font-size: 200px;
+  font-size: 12rem;
   padding-left: 20%;
   font-weight: 900;
   position: relative;
   @media only screen and (max-device-width: 768px) {
     padding-left: 0px;
-    font-size: 100px;
+    font-size: 6rem;
     width: 100vw;
   }
 `;
 
 const Title = styled(motion.div)`
-  font-size: 35px;
+  font-size: 2.2rem;
   padding-left: 20%;
   letter-spacing: 5px;
   position: relative;
   @media only screen and (max-device-width: 768px) {
     font-size: 18px;
     padding-left: 0px;
-    font-size: 18px;
+    font-size: 1.1rem;
     width: 100w;
   }
 `;
@@ -63,7 +63,7 @@ const Logos = styled(motion.div)`
 
 const Logo = styled(motion.img)`
   margin-right: 20px;
-  height: 100px;
+  height: 6rem;
   width: auto;
   @media only screen and (max-device-width: 768px) {
     height: 50px;
