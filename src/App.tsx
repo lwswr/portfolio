@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { Projects } from "./Projects";
 import { motion } from "framer-motion";
 
+document.title = "Lewis Wear Portfolio";
+
 const MainContainer = styled.nav`
   display: flex;
   flex-direction: row;
