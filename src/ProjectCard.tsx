@@ -52,6 +52,12 @@ const ProjectCardTitle = styled.div`
   @media only screen and (max-device-width: 768px) {
     font-size: 2rem;
   }
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    font-size: 2rem;
+  }
 `;
 
 const ProjectCardDescription = styled.div`
@@ -69,6 +75,12 @@ const ProjectCardDescription = styled.div`
     top: 30%;
     font-size: 0.65rem;
     width: 90%;
+  }
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    font-size: 0.7rem;
   }
 `;
 
@@ -102,6 +114,12 @@ const ButtonOne = styled.button`
     left: 20%;
     font-size: 1rem;
   }
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    font-size: 1rem;
+  }
 `;
 
 const ButtonTwo = styled.button`
@@ -124,6 +142,12 @@ const ButtonTwo = styled.button`
   }
   @media only screen and (max-device-width: 768px) {
     left: 60%;
+    font-size: 1rem;
+  }
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
     font-size: 1rem;
   }
 `;

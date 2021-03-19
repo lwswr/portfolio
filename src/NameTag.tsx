@@ -27,6 +27,12 @@ const Name = styled(motion.div)`
     font-size: 6rem;
     width: 100vw;
   }
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    font-size: 9rem;
+  }
 `;
 
 const Title = styled(motion.div)`
@@ -38,6 +44,12 @@ const Title = styled(motion.div)`
     padding-left: 0px;
     font-size: 1.1rem;
     width: 100w;
+  }
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    font-size: 1.8rem;
   }
 `;
 
